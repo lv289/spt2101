@@ -59,3 +59,10 @@ def logout_view(request):
 def stu_management(request):
     now_user = request.user.username
     return render(request,'app01/stu_management.html',{'user_name':now_user})
+# 添加学生函数
+def stu_add(request):
+    return render(request, 'app01/stu_add.html')
+
+# 编辑学生函数
+def stu_edit(request):
+    return render(request, 'app01/stu_edit.html')

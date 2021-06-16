@@ -20,5 +20,4 @@ import app01.urls
 urlpatterns = [
     path('admin/', admin.site.urls),
     re_path(r'', include('app01.urls'))
-
 ]
