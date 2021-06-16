@@ -28,6 +28,7 @@ class StudentInfo(models.Model):
     buf3 = models.CharField(max_length=50, null=True)
 
 
+
 class CheckInfo(models.Model):
     check_id = models.CharField(max_length=15, primary_key=True)
     sid = models.ForeignKey(to='StudentInfo',on_delete=models.CASCADE)
