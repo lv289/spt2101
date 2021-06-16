@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=divice-width,initial-scale=1,maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <title>手机通知</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <h2>最新通知</h2>
+        <p style="text-indent: 2em;">{{ text }}</p>
+    </div>
+</body>
+</html>
