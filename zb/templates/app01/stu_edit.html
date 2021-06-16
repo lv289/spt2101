@@ -22,58 +22,71 @@
                     <div class="form-group">
                         <label class="col-sm-2 col-md-offset-2 control-label">学号</label>
                         <div class="col-sm-5">
-                            <input type="text" class="form-control" placeholder="" name="sid">
+                            <input type="text" class="form-control" placeholder="" name="sid" value="{{ obj.sid }}">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-2 col-md-offset-2 control-label">姓名</label>
                         <div class="col-sm-5">
-                            <input type="text" class="form-control" placeholder="" name="name">
+                            <input type="text" class="form-control" placeholder="" name="name" value="{{ obj.sinfo.name  }}">
                         </div>
                     </div>
                     <div class="form-group" >
                         <label class="col-sm-2 col-md-offset-2 control-label">性别</label>
                         <div class="col-sm-5" id="r1">
-                            <input type="radio" name="sex" value="1">男
-                            <input type="radio" name="sex" value="0">女
+                            <select name="sex">
+                            {% if obj.sinfo.sex == 1 %}
+                <option selected value="1">男</option>
+            {% else %}
+                <option selected value="0">女</option>{% endif %}
+        </select>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-2 col-md-offset-2 control-label">年龄</label>
                         <div class="col-sm-5">
-                            <input type="text" class="form-control" placeholder="" name="age">
+                            <input type="text" class="form-control" placeholder="" name="age" value="{{ obj.sinfo.age }}">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-2 col-md-offset-2 control-label">班级</label>
                         <div class="col-sm-5">
-                            <input type="text" class="form-control" placeholder="" name="cid">
+                            <input type="text" class="form-control" placeholder="" name="cid" value="{{ obj.sinfo.cid }}">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-2 col-md-offset-2 control-label">电话号码</label>
                         <div class="col-sm-5">
-                            <input type="text" class="form-control" placeholder="" name="tel ">
+                            <input type="text" class="form-control" placeholder="" name="tel " value="{{ obj.sinfo.tel }}">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-2 col-md-offset-2 control-label">家庭住址</label>
                         <div class="col-sm-5">
-                            <input type="text" class="form-control" placeholder="" name="addr">
+                            <input type="text" class="form-control" placeholder="" name="addr" value="{{ obj.sinfo.addr }}">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-2 col-md-offset-2 control-label">是否在校</label>
                         <div class="col-sm-5" id="r2">
-                            <input type="radio" name="status" value="1">是
-                            <input type="radio" name="status" value="0">否
+                           <select name="in_school">
+                            {% if obj.sinfo.in_school == 1 %}
+                <option selected value="1">是</option>
+            {% else %}
+                <option selected value="0">否</option>{% endif %}
+        </select>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-2 col-md-offset-2 control-label">是否记过</label>
                         <div class="col-sm-5" id="r3">
-                            <input type="radio" name="wrong" value="1">是
-                            <input type="radio" name="wrong" value="0">否
+                          <select name="in_school">
+                              {% if obj.sinfo.wrong == 1 %}
+                <option selected value="1">是</option>
+            {% else %}
+                <option selected value="0">否</option>{% endif %}
+
+        </select>
                         </div>
                     </div>
                 <div class="form-group">
