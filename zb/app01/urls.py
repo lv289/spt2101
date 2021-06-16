@@ -9,4 +9,6 @@ urlpatterns = [
 
     #------------#
     path('stu_management/',views.stu_management,name='stu'),
+    path('stu_add/',views.stu_add),
+    path('stu_edit/',views.stu_edit)
 ]
